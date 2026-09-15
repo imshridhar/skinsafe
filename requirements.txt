@@ -1,0 +1,97 @@
+# ==============================================================================
+# ISIC 2019 Skin-Lesion Diagnostic & Research Platform
+# Master Requirements Specification (Production, ML, Backend & Testing)
+# Target Environment: Python 3.11.9 | PyTorch 2.6.0 | CUDA 12.6 / CPU Fallback
+# ==============================================================================
+#
+# QUICK INSTALLATION:
+#   1. CPU / Standard Wheels:
+#      pip install -r requirements.txt
+#
+#   2. NVIDIA GPU (CUDA 12.6 Acceleration):
+#      pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+#      pip install -r requirements.txt
+#
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Deep Learning, Computer Vision & Backbone Architectures
+# ------------------------------------------------------------------------------
+torch>=2.6.0,<2.7.0
+torchvision>=0.21.0,<0.22.0
+timm>=1.0.14,<1.1.0                     # PyTorch Image Models: ViT, Swin, ConvNeXt, EfficientNet
+pytorch-grad-cam>=0.2.8                 # Explainable AI: Grad-CAM, Grad-CAM++, Score-CAM, LayerCAM
+captum>=0.7.0                           # PyTorch Official Model Interpretability & Attribution
+albumentations>=1.4.15                  # High-performance CV augmentations for clinical imaging
+opencv-python>=4.10.0.84,<5.0.0.0       # Morphological filtering (DullRazor), colormaps, blending
+Pillow>=10.4.0,<12.0.0                  # Image decoding, EXIF orientation, luminance validation
+
+# ------------------------------------------------------------------------------
+# 2. Scientific Computing, Statistical Calibration & Tabular Analysis
+# ------------------------------------------------------------------------------
+numpy>=1.26.4,<2.2.0                    # High-performance tensor & matrix operations
+scipy>=1.13.1,<1.15.0                   # Ledoit-Wolf covariance shrinkage, NLL optimization
+pandas>=2.2.2,<3.0.0                    # Manifest auditing, metadata joins, dataset splits
+scikit-learn>=1.5.2,<1.7.0              # ROC-AUC, PR Curves, Balanced Accuracy, GroupKFold
+umap-learn>=0.5.6                       # High-dimensional embedding projection & clustering
+
+# ------------------------------------------------------------------------------
+# 3. Visualization, Research Reporting & Figure Generation (15 Graphs & 8 Tables)
+# ------------------------------------------------------------------------------
+matplotlib>=3.9.2,<4.0.0                # Publication-grade (300 DPI) multi-panel figures
+seaborn>=0.13.2,<0.14.0                 # Statistical heatmaps, confusion matrices, distributions
+tabulate>=0.9.0                         # Markdown & LaTeX table exporter for academic reports
+
+# ------------------------------------------------------------------------------
+# 4. Backend REST API & Microservice Infrastructure
+# ------------------------------------------------------------------------------
+Flask>=3.0.3,<3.1.0                     # Production Web API Application Factory
+Flask-Cors>=4.0.1                       # Cross-Origin Resource Sharing for React 19 Frontend
+Flask-JWT-Extended>=4.6.0               # Secure JSON Web Token authentication protocol
+Flask-Limiter>=3.8.0                    # IP-based rate limiting & DDoS defense
+Werkzeug>=3.0.4,<3.1.0                  # WSGI protocol tools & secure filename parsing
+waitress>=3.0.0,<3.1.0                  # Production-grade multi-threaded WSGI server (Windows/Linux)
+gunicorn>=22.0.0; sys_platform != 'win32' # Production WSGI server (Linux/Container deployments)
+python-dotenv>=1.0.1                    # 12-Factor App .env environment management
+pydantic>=2.8.2,<3.0.0                  # High-speed data validation & request payload schemas
+
+# ------------------------------------------------------------------------------
+# 5. Database, Security & Cryptography
+# ------------------------------------------------------------------------------
+pymongo[srv]>=4.8.0,<5.0.0              # MongoDB Client with DNS SRV Atlas connection support
+dnspython>=2.6.1                        # SRV record resolution for cloud database clusters
+bcrypt>=4.2.0                           # Secure password hashing (Cost Factor 12)
+cryptography>=43.0.0                    # Cryptographic primitives & JWT key rotation
+puremagic>=1.28                         # Strict Magic-Byte file signature sniffing & validation
+
+# ------------------------------------------------------------------------------
+# 6. MLOps, Config Management & Runtime Diagnostics
+# ------------------------------------------------------------------------------
+PyYAML>=6.0.2                           # YAML parser for training & OOD configuration files
+tqdm>=4.66.5                            # Dynamic progress bars for audit and training loops
+tensorboard>=2.17.1                     # Live loss, validation metric, and learning rate monitoring
+psutil>=6.0.0                           # Hardware utilization profiling (RAM, VRAM, CPU)
+rich>=13.8.0                            # Terminal formatting, structured logging & diagnostic tables
+
+# ------------------------------------------------------------------------------
+# 7. Testing, SDET Automation & Quality Assurance (5-Tier QA Suite)
+# ------------------------------------------------------------------------------
+pytest>=8.3.2                           # Next-gen automated test framework
+pytest-cov>=5.0.0                       # Coverage reporting with branch coverage tracking (>=85%)
+pytest-mock>=3.14.0                     # Mocking database, hardware, and external network I/O
+pytest-xdist>=3.6.1                     # Multi-CPU parallel test execution
+pytest-benchmark>=4.0.0                 # Latency benchmarking for <50ms inference verification
+hypothesis>=6.111.2                     # Metamorphic & property-based testing (rotations, flips, noise)
+requests>=2.32.3                        # REST API endpoint integration test client
+
+# ------------------------------------------------------------------------------
+# 8. Code Quality, Static Analysis, Linting & Type Checking
+# ------------------------------------------------------------------------------
+ruff>=0.6.3                             # Rust-based high-speed linter & formatter
+black>=24.8.0                           # Deterministic code formatter
+isort>=5.13.2                           # Strict import sorting
+mypy>=1.11.2                            # Static type checker for strict type safety
+bandit>=1.7.9                           # Automated security AST vulnerability scanner
+types-PyYAML>=6.0.12.20240808           # Type stubs for PyYAML
+types-requests>=2.32.0.20240712         # Type stubs for requests
+types-Pillow>=10.2.0.20240822           # Type stubs for Pillow

@@ -1,0 +1,11 @@
+Hyperparameter,Configured Value
+Architecture,efficientnet_b0
+Optimizer,AdamW
+Head Learning Rate,0.001
+Backbone Learning Rate,0.0001
+Weight Decay,0.01
+Loss Function,FocalLoss
+Focal Gamma,2.0
+Batch Size,8
+Gradient Accumulation,2
+Precision,FP16 (AMP)

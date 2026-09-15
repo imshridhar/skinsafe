@@ -1,0 +1,7 @@
+[2026-08-22 19:19:56] [INFO] [calibrate_model:56] - Structured logger initialized. Log file: ml\reports\logs\calibrate_model_20260822_191956.log
+[2026-08-22 19:19:57] [INFO] [calibrate_model:39] - Running calibration on device: cuda
+[2026-08-22 19:19:58] [INFO] [calibrate_model:50] - Loaded trained checkpoint from: ml/checkpoints/efficientnet_b0/best_model.pt
+[2026-08-22 19:19:58] [INFO] [calibrate_model:59] - Extracting logits across 3798 calibration samples...
+[2026-08-22 19:21:33] [INFO] [calibrate_model:74] - Optimal Temperature Scaler: T* = 1.2111
+[2026-08-22 19:21:33] [INFO] [calibrate_model:79] - Fitted Free Energy OOD Threshold: -2.6782
+[2026-08-22 19:21:33] [INFO] [calibrate_model:90] - Saved calibration parameters to: ml/checkpoints/efficientnet_b0/calibration_params.json

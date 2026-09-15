@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isic-lesion-platform"
+version = "1.0.0"
+description = "Clinical-grade dermatological AI research and diagnostic support platform on ISIC 2019"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { text = "CC BY-NC 4.0" }
+authors = [
+    { name = "Principal AI & Systems Architecture Team" }
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["ml/tests", "backend/tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --strict-markers --tb=short --cov=ml/src --cov=backend/app --cov-report=term-missing --cov-report=html:ml/reports/coverage"
+markers = [
+    "tier1: Unit and tensor shape contract tests",
+    "tier2: Data leakage and split integrity tests",
+    "tier3: Metamorphic and rotation/flip invariance tests",
+    "tier4: Adversarial and OOD rejection robustness tests",
+    "tier5: Demographic fairness and clinical subgroup audits",
+    "slow: Tests that require downloading models or heavy computation",
+    "gpu: Tests requiring CUDA GPU acceleration",
+]
+
+[tool.coverage.run]
+source = ["ml/src", "backend/app"]
+branch = true
+omit = [
+    "*/__init__.py",
+    "*/tests/*",
+]
+
+[tool.coverage.report]
+fail_under = 85.0
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = [".venv", "node_modules", "dataset"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # Pyflakes
+    "I",    # isort
+    "C4",   # flake8-comprehensions
+    "B",    # flake8-bugbear
+    "UP",   # pyupgrade
+    "SIM",  # flake8-simplify
+]
+ignore = [
+    "E501",  # Line too long (handled by formatter)
+    "B008",  # Do not perform function call in argument defaults
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | node_modules
+  | dataset
+  | storage
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+known_first_party = ["ml", "backend"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
+exclude = ["dataset/", "storage/", "frontend/"]

@@ -1,0 +1,12 @@
+[2026-08-23 01:12:31] [INFO] [train_engine:56] - Structured logger initialized. Log file: ml\reports\logs\train_engine_20260823_011231.log
+[2026-08-23 01:12:31] [INFO] [train_engine:123] - Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+[2026-08-23 01:12:31] [INFO] [train_engine:136] - DRY-RUN MODE: Subsetting dataset to 32 train and 16 val samples for pipeline validation.
+[2026-08-23 01:12:31] [INFO] [train_engine:164] - Loaded Train samples: 32, Validation samples: 16
+[2026-08-23 01:12:31] [INFO] [train_engine:165] - Batch Size: 8, Gradient Accumulation Steps: 2 (Effective Batch Size: 16)
+[2026-08-23 01:12:32] [INFO] [train_engine:213] - --- Starting Stage A: Warmup (Head Training Only) ---
+[2026-08-23 01:12:39] [INFO] [train_engine:251] - Epoch 1/1 (7.0s) - Train Loss: 0.1254 | Val Loss: 0.1252 | Val Balanced Acc: 0.1667 | Val Macro AUC (TTA): 0.1923 | Mel Sensitivity: 0.3333
+[2026-08-23 01:12:39] [INFO] [train_engine:279] - Saved new BEST checkpoint to ml\checkpoints\efficientnet_b0\best_model.pt (Val Macro AUC: 0.1923)
+[2026-08-23 01:12:39] [INFO] [train_engine:284] - Training complete. Best Macro AUC: 0.1923
+[2026-08-23 01:12:40] [INFO] [train_engine:292] - --- Automatically Running Post-Training Calibration ---
+[2026-08-23 01:14:24] [INFO] [train_engine:295] - --- Automatically Generating Dynamic Table 1 Per-Class Metrics ---
+[2026-08-23 01:15:52] [INFO] [train_engine:298] - Table 1 and calibration parameters dynamically refreshed for newly trained weights!

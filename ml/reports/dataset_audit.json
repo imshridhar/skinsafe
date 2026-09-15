@@ -1,0 +1,33 @@
+{
+  "dataset": "ISIC 2019",
+  "total_train_images": 25331,
+  "valid_train_images": 25331,
+  "corrupt_train_images": 0,
+  "total_test_images_locked": 8238,
+  "valid_test_images": 8238,
+  "class_distribution": {
+    "NV": 12875,
+    "MEL": 4522,
+    "BCC": 3323,
+    "BKL": 2624,
+    "AK": 867,
+    "SCC": 628,
+    "VASC": 253,
+    "DF": 239
+  },
+  "unique_sha256_hashes": 25281,
+  "duplicate_images_count": 100,
+  "duplicate_groups_count": 50,
+  "missing_metadata": {
+    "age_approx": 437,
+    "anatom_site_general": 2631,
+    "sex": 384,
+    "lesion_id": 2084
+  },
+  "resolution_stats": {
+    "min_width": 576,
+    "max_width": 1024,
+    "min_height": 450,
+    "max_height": 1024
+  }
+}

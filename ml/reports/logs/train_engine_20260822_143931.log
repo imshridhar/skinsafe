@@ -1,0 +1,44 @@
+[2026-08-22 14:39:31] [INFO] [train_engine:56] - Structured logger initialized. Log file: ml\reports\logs\train_engine_20260822_143931.log
+[2026-08-22 14:39:32] [INFO] [train_engine:123] - Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+[2026-08-22 14:39:32] [INFO] [train_engine:164] - Loaded Train samples: 17734, Validation samples: 3799
+[2026-08-22 14:39:32] [INFO] [train_engine:165] - Batch Size: 8, Gradient Accumulation Steps: 2 (Effective Batch Size: 16)
+[2026-08-22 14:39:32] [INFO] [train_engine:213] - --- Starting Stage A: Warmup (Head Training Only) ---
+[2026-08-22 14:51:40] [INFO] [train_engine:251] - Epoch 1/30 (727.5s) - Train Loss: 0.1263 | Val Loss: 0.1257 | Val Balanced Acc: 0.3908 | Val Macro AUC (TTA): 0.8130 | Mel Sensitivity: 0.4183
+[2026-08-22 14:51:40] [INFO] [train_engine:279] - Saved new BEST checkpoint to ml\checkpoints\efficientnet_b0\best_model.pt (Val Macro AUC: 0.8130)
+[2026-08-22 15:03:41] [INFO] [train_engine:251] - Epoch 2/30 (720.7s) - Train Loss: 0.1259 | Val Loss: 0.1255 | Val Balanced Acc: 0.3698 | Val Macro AUC (TTA): 0.8244 | Mel Sensitivity: 0.2445
+[2026-08-22 15:03:41] [INFO] [train_engine:279] - Saved new BEST checkpoint to ml\checkpoints\efficientnet_b0\best_model.pt (Val Macro AUC: 0.8244)
+[2026-08-22 15:15:25] [INFO] [train_engine:251] - Epoch 3/30 (704.6s) - Train Loss: 0.1260 | Val Loss: 0.1256 | Val Balanced Acc: 0.3973 | Val Macro AUC (TTA): 0.8226 | Mel Sensitivity: 0.3932
+[2026-08-22 15:28:05] [INFO] [train_engine:251] - Epoch 4/30 (759.3s) - Train Loss: 0.1263 | Val Loss: 0.1259 | Val Balanced Acc: 0.3850 | Val Macro AUC (TTA): 0.7973 | Mel Sensitivity: 0.4050
+[2026-08-22 15:38:40] [INFO] [train_engine:251] - Epoch 5/30 (635.1s) - Train Loss: 0.1262 | Val Loss: 0.1257 | Val Balanced Acc: 0.3829 | Val Macro AUC (TTA): 0.7980 | Mel Sensitivity: 0.3638
+[2026-08-22 15:38:40] [INFO] [train_engine:218] - --- Starting Stage B: Fine-Tuning (Unfreezing Top Blocks) ---
+[2026-08-22 15:47:32] [INFO] [train_engine:251] - Epoch 6/30 (532.5s) - Train Loss: 0.1253 | Val Loss: 0.1249 | Val Balanced Acc: 0.5072 | Val Macro AUC (TTA): 0.8750 | Mel Sensitivity: 0.3549
+[2026-08-22 15:47:32] [INFO] [train_engine:279] - Saved new BEST checkpoint to ml\checkpoints\efficientnet_b0\best_model.pt (Val Macro AUC: 0.8750)
+[2026-08-22 15:55:55] [INFO] [train_engine:251] - Epoch 7/30 (503.2s) - Train Loss: 0.1246 | Val Loss: 0.1250 | Val Balanced Acc: 0.5120 | Val Macro AUC (TTA): 0.8855 | Mel Sensitivity: 0.3638
+[2026-08-22 15:55:56] [INFO] [train_engine:279] - Saved new BEST checkpoint to ml\checkpoints\efficientnet_b0\best_model.pt (Val Macro AUC: 0.8855)
+[2026-08-22 16:04:23] [INFO] [train_engine:251] - Epoch 8/30 (507.1s) - Train Loss: 0.1243 | Val Loss: 0.1243 | Val Balanced Acc: 0.5666 | Val Macro AUC (TTA): 0.8914 | Mel Sensitivity: 0.5155
+[2026-08-22 16:04:23] [INFO] [train_engine:279] - Saved new BEST checkpoint to ml\checkpoints\efficientnet_b0\best_model.pt (Val Macro AUC: 0.8914)
+[2026-08-22 16:12:58] [INFO] [train_engine:251] - Epoch 9/30 (515.6s) - Train Loss: 0.1242 | Val Loss: 0.1244 | Val Balanced Acc: 0.5609 | Val Macro AUC (TTA): 0.9029 | Mel Sensitivity: 0.4624
+[2026-08-22 16:12:58] [INFO] [train_engine:279] - Saved new BEST checkpoint to ml\checkpoints\efficientnet_b0\best_model.pt (Val Macro AUC: 0.9029)
+[2026-08-22 16:21:36] [INFO] [train_engine:251] - Epoch 10/30 (517.6s) - Train Loss: 0.1239 | Val Loss: 0.1244 | Val Balanced Acc: 0.5864 | Val Macro AUC (TTA): 0.8870 | Mel Sensitivity: 0.4212
+[2026-08-22 16:30:13] [INFO] [train_engine:251] - Epoch 11/30 (517.3s) - Train Loss: 0.1238 | Val Loss: 0.1245 | Val Balanced Acc: 0.5781 | Val Macro AUC (TTA): 0.8805 | Mel Sensitivity: 0.4050
+[2026-08-22 16:38:55] [INFO] [train_engine:251] - Epoch 12/30 (521.6s) - Train Loss: 0.1236 | Val Loss: 0.1244 | Val Balanced Acc: 0.6089 | Val Macro AUC (TTA): 0.9008 | Mel Sensitivity: 0.4993
+[2026-08-22 16:47:19] [INFO] [train_engine:251] - Epoch 13/30 (503.7s) - Train Loss: 0.1235 | Val Loss: 0.1242 | Val Balanced Acc: 0.6042 | Val Macro AUC (TTA): 0.8968 | Mel Sensitivity: 0.4345
+[2026-08-22 16:55:31] [INFO] [train_engine:251] - Epoch 14/30 (492.0s) - Train Loss: 0.1234 | Val Loss: 0.1248 | Val Balanced Acc: 0.5733 | Val Macro AUC (TTA): 0.8880 | Mel Sensitivity: 0.4212
+[2026-08-22 17:03:42] [INFO] [train_engine:251] - Epoch 15/30 (491.7s) - Train Loss: 0.1232 | Val Loss: 0.1242 | Val Balanced Acc: 0.5892 | Val Macro AUC (TTA): 0.8920 | Mel Sensitivity: 0.4713
+[2026-08-22 17:11:53] [INFO] [train_engine:251] - Epoch 16/30 (490.5s) - Train Loss: 0.1231 | Val Loss: 0.1239 | Val Balanced Acc: 0.6286 | Val Macro AUC (TTA): 0.9101 | Mel Sensitivity: 0.5258
+[2026-08-22 17:11:53] [INFO] [train_engine:279] - Saved new BEST checkpoint to ml\checkpoints\efficientnet_b0\best_model.pt (Val Macro AUC: 0.9101)
+[2026-08-22 17:20:02] [INFO] [train_engine:251] - Epoch 17/30 (489.4s) - Train Loss: 0.1230 | Val Loss: 0.1240 | Val Balanced Acc: 0.6143 | Val Macro AUC (TTA): 0.8970 | Mel Sensitivity: 0.4669
+[2026-08-22 17:28:11] [INFO] [train_engine:251] - Epoch 18/30 (488.5s) - Train Loss: 0.1229 | Val Loss: 0.1240 | Val Balanced Acc: 0.6136 | Val Macro AUC (TTA): 0.9005 | Mel Sensitivity: 0.4845
+[2026-08-22 17:36:25] [INFO] [train_engine:251] - Epoch 19/30 (494.1s) - Train Loss: 0.1228 | Val Loss: 0.1240 | Val Balanced Acc: 0.6270 | Val Macro AUC (TTA): 0.8992 | Mel Sensitivity: 0.4624
+[2026-08-22 17:44:38] [INFO] [train_engine:251] - Epoch 20/30 (492.7s) - Train Loss: 0.1228 | Val Loss: 0.1239 | Val Balanced Acc: 0.6226 | Val Macro AUC (TTA): 0.9023 | Mel Sensitivity: 0.5302
+[2026-08-22 17:52:50] [INFO] [train_engine:251] - Epoch 21/30 (492.2s) - Train Loss: 0.1227 | Val Loss: 0.1239 | Val Balanced Acc: 0.6326 | Val Macro AUC (TTA): 0.9039 | Mel Sensitivity: 0.5184
+[2026-08-22 18:01:01] [INFO] [train_engine:251] - Epoch 22/30 (491.1s) - Train Loss: 0.1226 | Val Loss: 0.1239 | Val Balanced Acc: 0.6269 | Val Macro AUC (TTA): 0.9001 | Mel Sensitivity: 0.5184
+[2026-08-22 18:09:11] [INFO] [train_engine:251] - Epoch 23/30 (489.6s) - Train Loss: 0.1226 | Val Loss: 0.1240 | Val Balanced Acc: 0.6202 | Val Macro AUC (TTA): 0.8947 | Mel Sensitivity: 0.5140
+[2026-08-22 18:17:21] [INFO] [train_engine:251] - Epoch 24/30 (489.9s) - Train Loss: 0.1225 | Val Loss: 0.1239 | Val Balanced Acc: 0.6334 | Val Macro AUC (TTA): 0.8974 | Mel Sensitivity: 0.5214
+[2026-08-22 18:25:31] [INFO] [train_engine:251] - Epoch 25/30 (490.8s) - Train Loss: 0.1225 | Val Loss: 0.1240 | Val Balanced Acc: 0.6269 | Val Macro AUC (TTA): 0.9018 | Mel Sensitivity: 0.5405
+[2026-08-22 18:33:42] [INFO] [train_engine:251] - Epoch 26/30 (490.7s) - Train Loss: 0.1225 | Val Loss: 0.1239 | Val Balanced Acc: 0.6247 | Val Macro AUC (TTA): 0.8991 | Mel Sensitivity: 0.4801
+[2026-08-22 18:41:54] [INFO] [train_engine:251] - Epoch 27/30 (491.9s) - Train Loss: 0.1224 | Val Loss: 0.1239 | Val Balanced Acc: 0.6330 | Val Macro AUC (TTA): 0.8989 | Mel Sensitivity: 0.5420
+[2026-08-22 18:50:04] [INFO] [train_engine:251] - Epoch 28/30 (490.1s) - Train Loss: 0.1224 | Val Loss: 0.1239 | Val Balanced Acc: 0.6173 | Val Macro AUC (TTA): 0.8975 | Mel Sensitivity: 0.4948
+[2026-08-22 18:58:17] [INFO] [train_engine:251] - Epoch 29/30 (492.7s) - Train Loss: 0.1224 | Val Loss: 0.1238 | Val Balanced Acc: 0.6331 | Val Macro AUC (TTA): 0.9054 | Mel Sensitivity: 0.5361
+[2026-08-22 19:06:29] [INFO] [train_engine:251] - Epoch 30/30 (491.8s) - Train Loss: 0.1224 | Val Loss: 0.1239 | Val Balanced Acc: 0.6294 | Val Macro AUC (TTA): 0.9033 | Mel Sensitivity: 0.5302
+[2026-08-22 19:06:29] [INFO] [train_engine:284] - Training complete. Best Macro AUC: 0.9101

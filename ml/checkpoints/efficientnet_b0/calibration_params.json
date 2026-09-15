@@ -1,0 +1,7 @@
+{
+  "temperature": 1.2013970613479614,
+  "energy_threshold": -2.732174873352051,
+  "num_calibration_samples": 3798,
+  "target_tpr": 0.95,
+  "checkpoint_source": "ml/checkpoints/efficientnet_b0/best_model.pt"
+}

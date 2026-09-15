@@ -1,0 +1,6 @@
+[2026-08-26 22:34:38] [INFO] [generate_reports:56] - Structured logger initialized. Log file: ml\reports\logs\generate_reports_20260826_223438.log
+[2026-08-26 22:34:38] [INFO] [generate_reports:130] - Generating authentic research reports, tables, and figures...
+[2026-08-26 22:35:54] [INFO] [generate_reports:135] - Generated actual per-class metrics table, confusion matrix, and performance bar chart.
+[2026-08-26 22:35:54] [INFO] [generate_reports:74] - Saved Graph 1 (Class Distribution) to: ml/reports/figures/graph1_class_distribution.png
+[2026-08-26 22:35:54] [INFO] [generate_reports:123] - Exported hyperparameters table to ml\reports\tables\table3_hyperparameters.csv
+[2026-08-26 22:35:54] [INFO] [generate_reports:145] - All genuine reports and performance benchmarks generated successfully.

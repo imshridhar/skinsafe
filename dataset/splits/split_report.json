@@ -1,0 +1,55 @@
+{
+  "random_seed": 42,
+  "strategy": "StratifiedGroupKFold with Disjoint Set Union Clustering (14 Train, 3 Val, 3 Calib)",
+  "total_samples": 25331,
+  "train_samples": 17734,
+  "train_percentage": 70.01,
+  "val_samples": 3799,
+  "val_percentage": 15.0,
+  "calib_samples": 3798,
+  "calib_percentage": 14.99,
+  "class_distribution": {
+    "train": {
+      "NV": 9015,
+      "MEL": 3165,
+      "BCC": 2325,
+      "BKL": 1836,
+      "AK": 607,
+      "SCC": 441,
+      "VASC": 178,
+      "DF": 167
+    },
+    "val": {
+      "NV": 1929,
+      "MEL": 679,
+      "BCC": 499,
+      "BKL": 394,
+      "AK": 130,
+      "SCC": 94,
+      "VASC": 38,
+      "DF": 36
+    },
+    "calib": {
+      "NV": 1931,
+      "MEL": 678,
+      "BCC": 499,
+      "BKL": 394,
+      "AK": 130,
+      "SCC": 93,
+      "VASC": 37,
+      "DF": 36
+    }
+  },
+  "leakage_audit": {
+    "group_crossover_train_val": 0,
+    "group_crossover_train_calib": 0,
+    "group_crossover_val_calib": 0,
+    "hash_crossover_train_val": 0,
+    "hash_crossover_train_calib": 0,
+    "hash_crossover_val_calib": 0,
+    "lesion_crossover_train_val": 0,
+    "lesion_crossover_train_calib": 0,
+    "lesion_crossover_val_calib": 0,
+    "is_leakage_free": true
+  }
+}

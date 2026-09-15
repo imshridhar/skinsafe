@@ -1,0 +1,43 @@
+preprocessing:
+  version: "v1.0"
+  target_size: [224, 224]
+  interpolation: "bicubic"  # bicubic interpolation is standard for EfficientNet / ViT
+  color_mode: "RGB"
+  
+  # ImageNet Normalization
+  normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+    
+  # Quality Filters & Validation Thresholds
+  quality:
+    min_width: 100
+    min_height: 100
+    max_file_size_mb: 10.0
+    min_mean_brightness: 10.0      # Flag severely underexposed/black images
+    max_mean_brightness: 245.0     # Flag severely overexposed/white images
+    min_contrast_std: 8.0          # Flag low-contrast/blank images
+    
+  # Training-Only Augmentation Pipeline
+  augmentation:
+    horizontal_flip_prob: 0.5
+    vertical_flip_prob: 0.5
+    rotation_degrees: 30
+    color_jitter:
+      brightness: 0.15
+      contrast: 0.15
+      saturation: 0.15
+      hue: 0.05
+    random_affine:
+      degrees: 15
+      translate: [0.05, 0.05]
+      scale: [0.95, 1.05]
+    random_resized_crop:
+      scale: [0.85, 1.0]
+      ratio: [0.9, 1.1]
+
+  # Artifact Suppression (Feature-Flagged for Ablation)
+  artifact_suppression:
+    enabled: false
+    method: "black_top_hat" # DullRazor morphological hair removal
+    kernel_size: 9

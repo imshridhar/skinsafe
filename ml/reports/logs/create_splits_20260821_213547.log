@@ -1,0 +1,10 @@
+[2026-08-21 21:35:47] [INFO] [create_splits:56] - Structured logger initialized. Log file: ml\reports\logs\create_splits_20260821_213547.log
+[2026-08-21 21:35:48] [INFO] [create_splits:107] - Loading manifest from ml/reports/dataset_manifest.csv...
+[2026-08-21 21:35:48] [INFO] [create_splits:112] - Total valid labeled samples for splitting: 25331
+[2026-08-21 21:35:49] [INFO] [create_splits:117] - Total unique DSU connected component groups: 13927
+[2026-08-21 21:36:01] [INFO] [create_splits:144] - Verifying 0% data leakage across train, val, and calib...
+[2026-08-21 21:36:01] [INFO] [create_splits:146] - LEAKAGE VERIFICATION PASSED: All cross-split intersections are exactly 0.
+[2026-08-21 21:36:01] [INFO] [create_splits:157] - Saved train split (17734 samples) to dataset\splits\train.csv
+[2026-08-21 21:36:01] [INFO] [create_splits:158] - Saved val split (3799 samples) to dataset\splits\validation.csv
+[2026-08-21 21:36:01] [INFO] [create_splits:159] - Saved calib split (3798 samples) to dataset\splits\calibration.csv
+[2026-08-21 21:36:01] [INFO] [create_splits:181] - Split report saved to: dataset\splits\split_report.json

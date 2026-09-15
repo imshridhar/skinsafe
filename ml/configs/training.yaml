@@ -1,0 +1,62 @@
+training:
+  experiment_name: "isic2019_efficientnet_b0_v1"
+  model_architecture: "efficientnet_b0"
+  pretrained: true
+  num_classes: 9
+  seed: 42
+  
+  # Dataset Splits Paths
+  splits:
+    train_path: "dataset/splits/train.csv"
+    val_path: "dataset/splits/validation.csv"
+    calib_path: "dataset/splits/calibration.csv"
+    
+  # Hardware & Efficiency Configuration
+  hardware:
+    device: "cuda"                 # Auto-fallback to cpu if unavailable
+    batch_size: 8                  # Tuned for RTX 3050 4GB VRAM
+    gradient_accumulation_steps: 2 # Effective batch size = 16
+    num_workers: 0                 # Windows DataLoader optimization
+    pin_memory: true
+    mixed_precision: true          # torch.cuda.amp.autocast FP16
+    
+  # Optimization
+  optimizer:
+    name: "AdamW"
+    lr_head: 0.001
+    lr_backbone: 0.0001
+    weight_decay: 0.01
+    
+  scheduler:
+    name: "CosineAnnealingLR"
+    T_max: 30
+    eta_min: 0.000001
+    warmup_epochs: 3
+    
+  # Loss Function for Class Imbalance
+  loss:
+    name: "FocalLoss"              # Focal loss handles rare classes (DF, VASC)
+    gamma: 2.0
+    use_class_weights: true
+    label_smoothing: 0.05
+    
+  # 2-Stage Training Schedule
+  stages:
+    stage_a:
+      epochs: 5
+      freeze_backbone: true
+      description: "Warmup: Train classification head only"
+    stage_b:
+      epochs: 25
+      freeze_backbone: false
+      unfreeze_blocks: 4           # Fine-tune top 4 MBConv blocks
+      description: "Fine-tuning: Train top backbone blocks + head"
+      
+  # Checkpointing & Early Stopping
+  early_stopping:
+    monitor: "val_macro_auc"
+    mode: "max"
+    patience: 7
+    min_delta: 0.001
+    
+  output_dir: "ml/checkpoints/efficientnet_b0"

@@ -1,0 +1,305 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.12632224214218832,
+      "val_loss": 0.1255764006219057,
+      "val_top1_accuracy": 0.6120031587259805,
+      "val_balanced_accuracy": 0.3795327716876805,
+      "val_macro_auc": 0.8035838238985433,
+      "val_melanoma_sensitivity": 0.44035346097201766,
+      "elapsed_seconds": 708.5635652542114
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.1258570148850208,
+      "val_loss": 0.12541665853630965,
+      "val_top1_accuracy": 0.6227954724927612,
+      "val_balanced_accuracy": 0.4145946340351272,
+      "val_macro_auc": 0.8229291516791328,
+      "val_melanoma_sensitivity": 0.4565537555228277,
+      "elapsed_seconds": 705.2547047138214
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1259667699448861,
+      "val_loss": 0.12564577606476493,
+      "val_top1_accuracy": 0.582521716241116,
+      "val_balanced_accuracy": 0.40236346566743475,
+      "val_macro_auc": 0.8024220105333038,
+      "val_melanoma_sensitivity": 0.31958762886597936,
+      "elapsed_seconds": 686.3717119693756
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.12625031135837672,
+      "val_loss": 0.12571821766374738,
+      "val_top1_accuracy": 0.5917346670176362,
+      "val_balanced_accuracy": 0.39874301703746073,
+      "val_macro_auc": 0.7886673957806956,
+      "val_melanoma_sensitivity": 0.38880706921944036,
+      "elapsed_seconds": 659.4964375495911
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.12632092507498313,
+      "val_loss": 0.12573694683872233,
+      "val_top1_accuracy": 0.5991050276388523,
+      "val_balanced_accuracy": 0.35996048198973607,
+      "val_macro_auc": 0.7853809680677672,
+      "val_melanoma_sensitivity": 0.31075110456553756,
+      "elapsed_seconds": 621.8628354072571
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.12530744881415912,
+      "val_loss": 0.1248418575750429,
+      "val_top1_accuracy": 0.6720189523558832,
+      "val_balanced_accuracy": 0.4805514956845617,
+      "val_macro_auc": 0.8736200120434884,
+      "val_melanoma_sensitivity": 0.3858615611192931,
+      "elapsed_seconds": 528.294718503952
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.12467677445580809,
+      "val_loss": 0.12463529289521867,
+      "val_top1_accuracy": 0.7109765727823112,
+      "val_balanced_accuracy": 0.5173905308197944,
+      "val_macro_auc": 0.8918974180526416,
+      "val_melanoma_sensitivity": 0.4477172312223859,
+      "elapsed_seconds": 489.6026906967163
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.12434702446331122,
+      "val_loss": 0.1246986032791375,
+      "val_top1_accuracy": 0.7067649381416162,
+      "val_balanced_accuracy": 0.5602013717556371,
+      "val_macro_auc": 0.8878371642902623,
+      "val_melanoma_sensitivity": 0.3755522827687776,
+      "elapsed_seconds": 490.69192242622375
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.1241778346641741,
+      "val_loss": 0.12435952909575164,
+      "val_top1_accuracy": 0.7117662542774414,
+      "val_balanced_accuracy": 0.5562019578700547,
+      "val_macro_auc": 0.9022052409021752,
+      "val_melanoma_sensitivity": 0.3946980854197349,
+      "elapsed_seconds": 487.23237705230713
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.12403537218904392,
+      "val_loss": 0.12418506065225186,
+      "val_top1_accuracy": 0.7259805211897867,
+      "val_balanced_accuracy": 0.5719182899904645,
+      "val_macro_auc": 0.9040555550854066,
+      "val_melanoma_sensitivity": 0.4256259204712813,
+      "elapsed_seconds": 489.8177239894867
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.12382404681148532,
+      "val_loss": 0.12408110898289125,
+      "val_top1_accuracy": 0.7362463806264806,
+      "val_balanced_accuracy": 0.6208621317011349,
+      "val_macro_auc": 0.9063898536798041,
+      "val_melanoma_sensitivity": 0.4889543446244477,
+      "elapsed_seconds": 490.1991572380066
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.12363273783925019,
+      "val_loss": 0.1243108442309625,
+      "val_top1_accuracy": 0.7296657015003949,
+      "val_balanced_accuracy": 0.6035731596788125,
+      "val_macro_auc": 0.8889891763675661,
+      "val_melanoma_sensitivity": 0.5184094256259205,
+      "elapsed_seconds": 489.01499605178833
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.12353434357878265,
+      "val_loss": 0.12418041091729039,
+      "val_top1_accuracy": 0.7257172940247434,
+      "val_balanced_accuracy": 0.6000963485413885,
+      "val_macro_auc": 0.8798551094822873,
+      "val_melanoma_sensitivity": 0.5169366715758469,
+      "elapsed_seconds": 490.16008710861206
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.12334109021003505,
+      "val_loss": 0.12438647755159143,
+      "val_top1_accuracy": 0.721242432219005,
+      "val_balanced_accuracy": 0.6174876739398425,
+      "val_macro_auc": 0.8977550301957874,
+      "val_melanoma_sensitivity": 0.5920471281296024,
+      "elapsed_seconds": 490.8367295265198
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.12327035102084509,
+      "val_loss": 0.12392085657861239,
+      "val_top1_accuracy": 0.740721242432219,
+      "val_balanced_accuracy": 0.5963275827769441,
+      "val_macro_auc": 0.9044290783336901,
+      "val_melanoma_sensitivity": 0.5463917525773195,
+      "elapsed_seconds": 490.6900472640991
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.12315504251398147,
+      "val_loss": 0.1239076230609282,
+      "val_top1_accuracy": 0.7315082916556989,
+      "val_balanced_accuracy": 0.6248049313361137,
+      "val_macro_auc": 0.8971443199258404,
+      "val_melanoma_sensitivity": 0.5419734904270986,
+      "elapsed_seconds": 489.87303853034973
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.1230391238325476,
+      "val_loss": 0.12391123944409554,
+      "val_top1_accuracy": 0.7375625164516978,
+      "val_balanced_accuracy": 0.6170130204382747,
+      "val_macro_auc": 0.905724866683548,
+      "val_melanoma_sensitivity": 0.508100147275405,
+      "elapsed_seconds": 493.0312385559082
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.12293574316493282,
+      "val_loss": 0.124039078780964,
+      "val_top1_accuracy": 0.7296657015003949,
+      "val_balanced_accuracy": 0.6194152528093895,
+      "val_macro_auc": 0.8979132286448226,
+      "val_melanoma_sensitivity": 0.4801178203240059,
+      "elapsed_seconds": 489.9445102214813
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.12288135699856385,
+      "val_loss": 0.12385588614297058,
+      "val_top1_accuracy": 0.7396683337720453,
+      "val_balanced_accuracy": 0.626544519714901,
+      "val_macro_auc": 0.8960354250508499,
+      "val_melanoma_sensitivity": 0.48748159057437407,
+      "elapsed_seconds": 491.5520188808441
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.12275065144382605,
+      "val_loss": 0.12404835146488281,
+      "val_top1_accuracy": 0.7307186101605686,
+      "val_balanced_accuracy": 0.6036257532684755,
+      "val_macro_auc": 0.8881948777010371,
+      "val_melanoma_sensitivity": 0.5463917525773195,
+      "elapsed_seconds": 491.2856948375702
+    },
+    {
+      "epoch": 21,
+      "train_loss": 0.12270077233170931,
+      "val_loss": 0.12394504876874503,
+      "val_top1_accuracy": 0.7394051066070019,
+      "val_balanced_accuracy": 0.6218587593787901,
+      "val_macro_auc": 0.891080641008131,
+      "val_melanoma_sensitivity": 0.5331369661266568,
+      "elapsed_seconds": 491.393949508667
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.12265101799896205,
+      "val_loss": 0.1238102882229739,
+      "val_top1_accuracy": 0.7446696499078705,
+      "val_balanced_accuracy": 0.6219181297325984,
+      "val_macro_auc": 0.896449002870469,
+      "val_melanoma_sensitivity": 0.5463917525773195,
+      "elapsed_seconds": 491.29279351234436
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.1225988361986592,
+      "val_loss": 0.12394713109521434,
+      "val_top1_accuracy": 0.737036062121611,
+      "val_balanced_accuracy": 0.6260028434563504,
+      "val_macro_auc": 0.8971226583596512,
+      "val_melanoma_sensitivity": 0.5228276877761414,
+      "elapsed_seconds": 492.31415820121765
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.12257864489164941,
+      "val_loss": 0.1238417862457299,
+      "val_top1_accuracy": 0.742563832587523,
+      "val_balanced_accuracy": 0.6079882330460407,
+      "val_macro_auc": 0.8847086991751323,
+      "val_melanoma_sensitivity": 0.5287187039764359,
+      "elapsed_seconds": 493.6862473487854
+    },
+    {
+      "epoch": 25,
+      "train_loss": 0.12253653295980953,
+      "val_loss": 0.12387098514169227,
+      "val_top1_accuracy": 0.7399315609370887,
+      "val_balanced_accuracy": 0.6317433376113324,
+      "val_macro_auc": 0.8898132742249676,
+      "val_melanoma_sensitivity": 0.5110456553755522,
+      "elapsed_seconds": 492.0790524482727
+    },
+    {
+      "epoch": 26,
+      "train_loss": 0.12249799664117067,
+      "val_loss": 0.12401007892081975,
+      "val_top1_accuracy": 0.7301921558304817,
+      "val_balanced_accuracy": 0.6218990431479785,
+      "val_macro_auc": 0.8937210483840246,
+      "val_melanoma_sensitivity": 0.5567010309278351,
+      "elapsed_seconds": 492.3660399913788
+    },
+    {
+      "epoch": 27,
+      "train_loss": 0.12243545739024497,
+      "val_loss": 0.12392597253870481,
+      "val_top1_accuracy": 0.7365096077915241,
+      "val_balanced_accuracy": 0.6015126105103298,
+      "val_macro_auc": 0.8978510606940182,
+      "val_melanoma_sensitivity": 0.5169366715758469,
+      "elapsed_seconds": 491.6452479362488
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.12242171594590953,
+      "val_loss": 0.12382931618211646,
+      "val_top1_accuracy": 0.7459857857330876,
+      "val_balanced_accuracy": 0.6078422224095239,
+      "val_macro_auc": 0.8950183745194563,
+      "val_melanoma_sensitivity": 0.508100147275405,
+      "elapsed_seconds": 2352.626441717148
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.12242752641147027,
+      "val_loss": 0.12391496472458803,
+      "val_top1_accuracy": 0.7412476967623058,
+      "val_balanced_accuracy": 0.627132985762048,
+      "val_macro_auc": 0.8959158578651019,
+      "val_melanoma_sensitivity": 0.5390279823269514,
+      "elapsed_seconds": 621.8180210590363
+    },
+    {
+      "epoch": 30,
+      "train_loss": 0.12241269967373697,
+      "val_loss": 0.1238795681418981,
+      "val_top1_accuracy": 0.7428270597525665,
+      "val_balanced_accuracy": 0.6130685705917512,
+      "val_macro_auc": 0.8836124170813668,
+      "val_melanoma_sensitivity": 0.5419734904270986,
+      "elapsed_seconds": 490.6010744571686
+    }
+  ],
+  "best_macro_auc": 0.9063898536798041
+}

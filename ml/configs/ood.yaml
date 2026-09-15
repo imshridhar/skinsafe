@@ -1,0 +1,41 @@
+ood:
+  version: "v1.0"
+  calibration_split: "dataset/splits/calibration.csv"
+  
+  # Temperature Scaling for Probability Calibration
+  temperature_scaling:
+    enabled: true
+    initial_temperature: 1.5
+    max_iter: 100
+    lr: 0.01
+    criterion: "NLL"               # Minimize Negative Log-Likelihood
+    
+  # Out-Of-Distribution Detection Methods
+  methods:
+    # 1. Energy-Based Scoring: E(x; T) = -T * log(sum(exp(f_i(x)/T)))
+    energy_score:
+      enabled: true
+      temperature: 1.0
+      target_fpr: 0.05             # 95% True Positive Rate threshold
+      
+    # 2. Mahalanobis Distance on Penultimate 1280-d Embeddings
+    mahalanobis:
+      enabled: true
+      embedding_dim: 1280
+      shrinkage_cov: true          # Ledoit-Wolf shrinkage for covariance stability
+      target_fpr: 0.05
+      
+    # 3. Maximum Softmax Probability (Baseline)
+    msp:
+      enabled: true
+      min_confidence_threshold: 0.65
+      
+  # Selective Prediction & Clinical Abstention Gates (>99% High-Confidence Precision)
+  selective_prediction:
+    high_confidence_target_precision: 0.99
+    min_prob_for_auto_prediction: 0.85
+    max_entropy_for_auto_prediction: 0.45
+    abstention_status_label: "uncertain"
+    ood_status_label: "ood"
+    
+  output_dir: "ml/reports/calibration"

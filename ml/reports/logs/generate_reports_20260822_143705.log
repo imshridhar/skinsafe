@@ -1,0 +1,9 @@
+[2026-08-22 14:37:05] [INFO] [generate_reports:56] - Structured logger initialized. Log file: ml\reports\logs\generate_reports_20260822_143705.log
+[2026-08-22 14:37:05] [INFO] [generate_reports:254] - Generating publication reports, tables, and figures...
+[2026-08-22 14:37:05] [INFO] [generate_reports:249] - Exported academic research tables to ml\reports\tables
+[2026-08-22 14:37:06] [INFO] [generate_reports:68] - Saved Graph 1 (Class Distribution) to: ml/reports/figures/graph1_class_distribution.png
+[2026-08-22 14:37:06] [INFO] [generate_reports:164] - Saved Graph 9 (Model Comparison) to: ml/reports/figures/graph9_model_comparisons.png
+[2026-08-22 14:37:06] [INFO] [generate_reports:99] - Saved Figure 5 (Confusion Matrix) to: ml/reports/figures/fig5_confusion_matrix.png
+[2026-08-22 14:37:07] [INFO] [generate_reports:132] - Saved Graph 8 (Per-Class Metrics) to: ml/reports/figures/graph8_per_class_metrics.png
+[2026-08-22 14:37:07] [INFO] [generate_reports:202] - Saved Graph 11 (Fairness Audit) to: ml/reports/figures/graph11_fairness_audit.png
+[2026-08-22 14:37:07] [INFO] [generate_reports:275] - All academic reports and Table 1 benchmarks generated successfully.

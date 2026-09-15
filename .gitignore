@@ -1,0 +1,26 @@
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+/dataset/organized_by_split
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+storage/uploads/*
+!storage/uploads/.gitkeep
+storage/gradcam/*
+!storage/gradcam/.gitkeep
+
+# OS / IDE Specific
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
